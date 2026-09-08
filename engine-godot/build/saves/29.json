@@ -1,0 +1,96 @@
+{
+  "version": 3,
+  "id": 29,
+  "name": "蒙格",
+  "true_name": "蒙格",
+  "avatar_path": "",
+  "utype": 1,
+  "servant_class": 6,
+  "hidden_attr": 1,
+  "level": 70,
+  "faction": 0,
+  "law": 2,
+  "moral": 2,
+  "traits": 7,
+  "fp": 1,
+  "cs": 3,
+  "roaming": 0,
+  "alive": true,
+  "main_job": "",
+  "sub_job": "",
+  "attr": [
+    60,
+    60,
+    50,
+    10,
+    40,
+    50,
+    0
+  ],
+  "attr_perm": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "mp_cap": 150,
+  "mp_floor": -100,
+  "mp_cur": 150,
+  "skills": [
+    {
+      "id": 274,
+      "dname": "气息遮蔽",
+      "rank": "E",
+      "note": "原型:气息遮蔽"
+    },
+    {
+      "id": 726,
+      "dname": "恶兆之子"
+    },
+    {
+      "id": 238,
+      "dname": "真实之母的融合"
+    },
+    {
+      "id": 202,
+      "dname": "蒙格温圣矛"
+    },
+    {
+      "id": 632,
+      "dname": "血蔷薇",
+      "rank": "E",
+      "note": "原型:投影魔术"
+    },
+    {
+      "id": 404,
+      "dname": "血之祝议",
+      "rank": "D"
+    },
+    {
+      "id": 21
+    }
+  ],
+  "phantasms": [
+    {
+      "id": 55,
+      "dname": "血之圣都·蒙格温王朝"
+    },
+    {
+      "id": 658,
+      "dname": "血王矛"
+    },
+    {
+      "id": 478,
+      "dname": "血焰"
+    },
+    {
+      "id": 659,
+      "dname": "零！零！零！"
+    }
+  ],
+  "items": [],
+  "status": []
+}

@@ -1,0 +1,17 @@
+# Godot 本机生成缓存(不交付;删除后由 Godot 重新生成)
+.godot/
+
+# .NET 构建产物
+bin/
+obj/
+*.user
+
+# 测试临时产物
+tools/engine-test/bin/
+tools/engine-test/obj/
+
+# 系统
+Thumbs.db
+.DS_Store
+
+# 注意: *.cs.uid 文件要保留(见 README)· .godot 中的 uid_cache 由引擎维护

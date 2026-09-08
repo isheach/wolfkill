@@ -1,0 +1,85 @@
+{
+  "version": 3,
+  "id": 25,
+  "name": "张角",
+  "true_name": "张角",
+  "avatar_path": "",
+  "utype": 1,
+  "servant_class": 5,
+  "hidden_attr": 2,
+  "level": 70,
+  "faction": 0,
+  "law": 2,
+  "moral": 1,
+  "traits": 1,
+  "fp": 1,
+  "cs": 3,
+  "roaming": 0,
+  "alive": true,
+  "main_job": "",
+  "sub_job": "",
+  "attr": [
+    20,
+    20,
+    20,
+    90,
+    60,
+    50,
+    0
+  ],
+  "attr_perm": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "mp_cap": 150,
+  "mp_floor": -100,
+  "mp_cur": 150,
+  "skills": [
+    {
+      "id": 706,
+      "rank": "E",
+      "note": "原型:阵地制造"
+    },
+    {
+      "id": 707,
+      "rank": "E"
+    },
+    {
+      "id": 289,
+      "rank": "C",
+      "note": "原型:太平要术"
+    },
+    {
+      "id": 652,
+      "dname": "符水济世"
+    },
+    {
+      "id": 278,
+      "dname": "太平八卦",
+      "note": "原型:魔力放出 (冰)"
+    }
+  ],
+  "phantasms": [
+    {
+      "id": 305,
+      "dname": "岁在甲子，天下大吉"
+    },
+    {
+      "id": 47,
+      "dname": "三公将军·供颂太平之道",
+      "rank": "B"
+    },
+    {
+      "id": 470,
+      "dname": "辉煌的旧梦，予那万民之黄天",
+      "rank": "C"
+    }
+  ],
+  "items": [],
+  "status": []
+}

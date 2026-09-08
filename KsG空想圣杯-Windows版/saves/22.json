@@ -1,0 +1,82 @@
+{
+  "version": 3,
+  "id": 22,
+  "name": "托尔芬",
+  "true_name": "托尔芬",
+  "avatar_path": "",
+  "utype": 1,
+  "servant_class": 1,
+  "hidden_attr": 3,
+  "level": 40,
+  "faction": 0,
+  "law": 1,
+  "moral": 1,
+  "traits": 1,
+  "fp": 1,
+  "cs": 3,
+  "roaming": 0,
+  "alive": true,
+  "main_job": "",
+  "sub_job": "",
+  "attr": [
+    100,
+    100,
+    100,
+    100,
+    100,
+    55,
+    0
+  ],
+  "attr_perm": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "mp_cap": 150,
+  "mp_floor": -100,
+  "mp_cur": 150,
+  "skills": [
+    {
+      "id": 688,
+      "dname": "意志力",
+      "rank": "E"
+    },
+    {
+      "id": 721,
+      "dname": "维京血脉",
+      "rank": "EX"
+    },
+    {
+      "id": 410,
+      "dname": "探险员领军",
+      "rank": "A",
+      "note": "原型:星之开拓者"
+    },
+    {
+      "id": 131,
+      "dname": "殖民主义"
+    }
+  ],
+  "phantasms": [
+    {
+      "id": 695,
+      "dname": "记述吧，勇于开拓星辰之人"
+    },
+    {
+      "id": 163,
+      "dname": "血浪战骸",
+      "rank": "E"
+    },
+    {
+      "id": 665,
+      "dname": "不杀誓约·Oath·Non·Killing",
+      "rank": "A"
+    }
+  ],
+  "items": [],
+  "status": []
+}

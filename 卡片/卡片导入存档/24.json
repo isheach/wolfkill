@@ -1,0 +1,61 @@
+{
+  "version": 3,
+  "id": 24,
+  "name": "卡斯托尔",
+  "true_name": "卡斯托尔",
+  "avatar_path": "",
+  "utype": 2,
+  "servant_class": 0,
+  "hidden_attr": -1,
+  "level": 50,
+  "faction": 0,
+  "law": 0,
+  "moral": 0,
+  "traits": 1,
+  "fp": 1,
+  "cs": 3,
+  "roaming": 0,
+  "alive": true,
+  "main_job": "异能者",
+  "sub_job": "宝菌传承者",
+  "attr": [
+    5,
+    10,
+    5,
+    10,
+    40,
+    0,
+    80
+  ],
+  "attr_perm": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "mp_cap": 150,
+  "mp_floor": -100,
+  "mp_cur": 150,
+  "skills": [
+    {
+      "id": 231,
+      "dname": "断覆之羽-为你赐福",
+      "rank": "B"
+    },
+    {
+      "id": 578,
+      "dname": "圣子之心-羽"
+    },
+    {
+      "id": 635,
+      "dname": "挚爱的弟弟",
+      "note": "原型:信任的拍档"
+    }
+  ],
+  "phantasms": [],
+  "items": [],
+  "status": []
+}

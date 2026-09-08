@@ -1,0 +1,60 @@
+{
+  "version": 3,
+  "id": 30,
+  "name": "黎曦夜",
+  "true_name": "黎曦夜",
+  "avatar_path": "",
+  "utype": 2,
+  "servant_class": 0,
+  "hidden_attr": -1,
+  "level": 40,
+  "faction": 0,
+  "law": 0,
+  "moral": 0,
+  "traits": 1,
+  "fp": 1,
+  "cs": 3,
+  "roaming": 0,
+  "alive": true,
+  "main_job": "体术师",
+  "sub_job": "结界师",
+  "attr": [
+    80,
+    80,
+    60,
+    20,
+    40,
+    0,
+    70
+  ],
+  "attr_perm": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "mp_cap": 150,
+  "mp_floor": -100,
+  "mp_cur": 150,
+  "skills": [
+    {
+      "id": 527
+    },
+    {
+      "id": 70
+    },
+    {
+      "id": 73
+    }
+  ],
+  "phantasms": [
+    {
+      "id": 715
+    }
+  ],
+  "items": [],
+  "status": []
+}

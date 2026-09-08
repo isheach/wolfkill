@@ -1,0 +1,192 @@
+DB total: 758 unique names: 753
+
+== Referenced names found in cards: 115 ==
+
+[MISS] '类型'                                     cards=_gouzi.txt,_menge.txt,_nailong.txt,_qiuyuan.txt
+[MISS] '恶龙之血凯'                                  cards=_gouzi.txt,_nailong.txt,_tianhai.txt
+[OK ] '天逆矛'                                    cards=_gouzi.txt,_menge.txt,_qiuyuan.txt
+[MISS] '气息遮蔽'                                   cards=_gouzi.txt,_menge.txt
+[OK ] '无明三段突'                                  cards=_lixiye.txt,_qiuyuan.txt
+[OK ] '兽化'                                     cards=_nailong.txt,_torfen.txt
+[OK ] '野兽的逻辑'                                  cards=_nailong.txt,_torfen.txt
+[OK ] '对魔力'                                    cards=_qiuyuan.txt,_torfen.txt
+[MISS] '阵地制造'                                   cards=_zhangjiao_all.txt,_zhangjiao_s1.txt
+[OK ] '苍天已死，黄天当立'                              cards=_zhangjiao_all.txt,_zhangjiao_s1.txt
+[MISS] '岁在甲子，天下大吉'                              cards=_zhangjiao_all.txt,_zhangjiao_s1.txt
+[OK ] '道具制作'                                   cards=_zhangjiao_all.txt,_zhangjiao_s1.txt
+[OK ] '神威车轮'                                   cards=_zhangjiao_all.txt,_zhangjiao_s1.txt
+[MISS] '三公将军·供颂太平之道'                            cards=_zhangjiao_all.txt,_zhangjiao_s1.txt
+[OK ] '勇往直前·俱利伽罗岭'                             cards=_zhangjiao_all.txt,_zhangjiao_s1.txt
+[MISS] '辉煌的旧梦，予那万民之黄天'                          cards=_zhangjiao_all.txt,_zhangjiao_s1.txt
+[OK ] '太平要术'                                   cards=_zhangjiao_all.txt,_zhangjiao_s1.txt
+[OK ] '元素精灵'                                   cards=_zhangjiao_all.txt,_zhangjiao_s1.txt
+[MISS] '符水济世'                                   cards=_zhangjiao_all.txt,_zhangjiao_s1.txt
+[MISS] '魔力放出 (冰)'                               cards=_zhangjiao_all.txt,_zhangjiao_s1.txt
+[MISS] '太平八卦'                                   cards=_zhangjiao_all.txt,_zhangjiao_s1.txt
+[MISS] '支援信标'                                   cards=_bolvke.txt
+[OK ] '反转冲动'                                   cards=_bolvke.txt
+[MISS] '圣子之心-鸦'                                 cards=_bolvke.txt
+[OK ] '万华之杖'                                   cards=_bolvke.txt
+[MISS] '受束之鸦'                                   cards=_bolvke.txt
+[OK ] '影乡的武练'                                  cards=_bolvke.txt
+[MISS] '嗜血的传承'                                  cards=_bolvke.txt
+[OK ] '人类无骨'                                   cards=_gouzi.txt
+[MISS] '小巷中的赌徒'                                 cards=_gouzi.txt
+[MISS] '手枪连发'                                   cards=_gouzi.txt
+[OK ] '神性'                                     cards=_gouzi.txt
+[MISS] '悦之身躯'                                   cards=_gouzi.txt
+[MISS] '命运的筹码'                                  cards=_gouzi.txt
+[OK ] '宗和的心得'                                  cards=_gouzi.txt
+[MISS] '侦探的直觉'                                  cards=_gouzi.txt
+[MISS] '好运骰子'                                   cards=_gouzi.txt
+[MISS] '炼金基盘'                                   cards=_kastor.txt
+[OK ] '英雄制作'                                   cards=_kastor.txt
+[MISS] '断覆之羽-为你赐福'                              cards=_kastor.txt
+[OK ] '流转之传承'                                  cards=_kastor.txt
+[MISS] '圣子之心-羽'                                 cards=_kastor.txt
+[MISS] '信任的拍档'                                  cards=_kastor.txt
+[MISS] '挚爱的弟弟'                                  cards=_kastor.txt
+[MISS] '潜能激发'                                   cards=_kastor.txt
+[MISS] '血脉流转'                                   cards=_kastor.txt
+[MISS] '（构件模板）'                                 cards=_lixiye.txt
+[MISS] '（构件名称）'                                 cards=_lixiye.txt
+[OK ] '魔剑传承'                                   cards=_lixiye.txt
+[MISS] '(自定义技能名称)'                              cards=_lixiye.txt
+[OK ] '天人合一'                                   cards=_lixiye.txt
+[OK ] '伪·直死之魔眼'                                cards=_lixiye.txt
+[OK ] '邀至心荡神驰的黄金剧场'                            cards=_menge.txt
+[MISS] '血之圣都·蒙格温王朝'                             cards=_menge.txt
+[OK ] '鬼神之显'                                   cards=_menge.txt
+[OK ] '童女讴歌的荣华帝政'                              cards=_menge.txt
+[MISS] '恶兆之子'                                   cards=_menge.txt
+[MISS] '血王矛'                                    cards=_menge.txt
+[OK ] '堕天·灼热异邦'                                cards=_menge.txt
+[MISS] '血焰'                                     cards=_menge.txt
+[OK ] '魔境的智慧'                                  cards=_menge.txt
+[MISS] '真实之母的融合'                                cards=_menge.txt
+[MISS] '蒙格温圣矛'                                  cards=_menge.txt
+[MISS] '投影魔术'                                   cards=_menge.txt
+[OK ] '星驰终幕的蔷薇'                                cards=_menge.txt
+[MISS] '血蔷薇'                                    cards=_menge.txt
+[MISS] '零！零！零！'                                 cards=_menge.txt
+[OK ] '大量生产'                                   cards=_menge.txt
+[OK ] '皇帝特权'                                   cards=_menge.txt
+[MISS] '血之祝议'                                   cards=_menge.txt
+[MISS] '已阵守护'                                   cards=_nailong.txt
+[MISS] '奶龙洗香香~'                                 cards=_nailong.txt
+[MISS] '大肚皮~'                                   cards=_nailong.txt
+[OK ] '斩断死辉之刃'                                 cards=_nailong.txt
+[MISS] '村里头最大的龙~'                               cards=_nailong.txt
+[MISS] '看我大肚肚~'                                 cards=_nailong.txt
+[OK ] '维新的英雄'                                  cards=_nailong.txt
+[MISS] '双龙共舞'                                   cards=_nailong.txt
+[OK ] '护国的鬼将'                                  cards=_nailong.txt
+[MISS] '奶龙嘉年华'                                  cards=_nailong.txt
+[MISS] '如野狗一般觅食'                                cards=_nailong.txt
+[OK ] '无穷的武练'                                  cards=_nailong.txt
+[MISS] '与宙斯艰难的一战'                               cards=_nailong.txt
+[MISS] '对 魔力'                                   cards=_qiuyuan.txt
+[MISS] '答辨三连'                                   cards=_qiuyuan.txt
+[OK ] '源流斗争'                                   cards=_qiuyuan.txt
+[MISS] '一斩，足矣'                                  cards=_qiuyuan.txt
+[OK ] '无辜的怪物'                                  cards=_qiuyuan.txt
+[OK ] '绝招'                                     cards=_qiuyuan.txt
+[MISS] '无辜的他'                                   cards=_qiuyuan.txt
+[OK ] '魔王'                                     cards=_qiuyuan.txt
+[MISS] '反...复朝之心'                               cards=_qiuyuan.txt
+[MISS] '秘剑'                                     cards=_qiuyuan.txt
+[OK ] '己阵防御'                                   cards=_tianhai.txt
+[OK ] '吾将远征，鹦鹉螺的大冲角'                           cards=_tianhai.txt
+[MISS] '溟海引航'                                   cards=_tianhai.txt
+[MISS] '沉默于远海，诺第留斯号的守望'                         cards=_tianhai.txt
+[MISS] '钥令—不灭的雷光'                               cards=_tianhai.txt
+[OK ] '王途踏破'                                   cards=_tianhai.txt
+[MISS] '圣火的引航'                                  cards=_tianhai.txt
+[OK ] '打开的是梦想之门'                               cards=_tianhai.txt
+[MISS] '照彻渊海的引航'                                cards=_tianhai.txt
+[OK ] '阴阳交汇'                                   cards=_tianhai.txt
+[MISS] '混沌旗帜'                                   cards=_tianhai.txt
+[OK ] '誓约胜利之剑'                                 cards=_torfen.txt
+[MISS] '意志力'                                    cards=_torfen.txt
+[MISS] '记述吧，勇于开拓星辰之人'                           cards=_torfen.txt
+[OK ] '勇者的不凋花'                                 cards=_torfen.txt
+[MISS] '维京血脉'                                   cards=_torfen.txt
+[MISS] '血浪战骸'                                   cards=_torfen.txt
+[OK ] '十三封印·Seal·Thirteen'                     cards=_torfen.txt
+[MISS] '不杀誓约·Oath·Non·Killing'                  cards=_torfen.txt
+[MISS] '星之开拓者'                                  cards=_torfen.txt
+[MISS] '探险员领军'                                  cards=_torfen.txt
+[MISS] '殖民主义'                                   cards=_torfen.txt
+
+Found in DB: 46/115
+
+== Missing (need mapping/creation): 69 ==
+  - '类型'
+  - '恶龙之血凯'
+  - '气息遮蔽'
+  - '阵地制造'
+  - '岁在甲子，天下大吉'
+  - '三公将军·供颂太平之道'
+  - '辉煌的旧梦，予那万民之黄天'
+  - '符水济世'
+  - '魔力放出 (冰)'
+  - '太平八卦'
+  - '支援信标'
+  - '圣子之心-鸦'
+  - '受束之鸦'
+  - '嗜血的传承'
+  - '小巷中的赌徒'
+  - '手枪连发'
+  - '悦之身躯'
+  - '命运的筹码'
+  - '侦探的直觉'
+  - '好运骰子'
+  - '炼金基盘'
+  - '断覆之羽-为你赐福'
+  - '圣子之心-羽'
+  - '信任的拍档'
+  - '挚爱的弟弟'
+  - '潜能激发'
+  - '血脉流转'
+  - '（构件模板）'
+  - '（构件名称）'
+  - '(自定义技能名称)'
+  - '血之圣都·蒙格温王朝'
+  - '恶兆之子'
+  - '血王矛'
+  - '血焰'
+  - '真实之母的融合'
+  - '蒙格温圣矛'
+  - '投影魔术'
+  - '血蔷薇'
+  - '零！零！零！'
+  - '血之祝议'
+  - '已阵守护'
+  - '奶龙洗香香~'
+  - '大肚皮~'
+  - '村里头最大的龙~'
+  - '看我大肚肚~'
+  - '双龙共舞'
+  - '奶龙嘉年华'
+  - '如野狗一般觅食'
+  - '与宙斯艰难的一战'
+  - '对 魔力'
+  - '答辨三连'
+  - '一斩，足矣'
+  - '无辜的他'
+  - '反...复朝之心'
+  - '秘剑'
+  - '溟海引航'
+  - '沉默于远海，诺第留斯号的守望'
+  - '钥令—不灭的雷光'
+  - '圣火的引航'
+  - '照彻渊海的引航'
+  - '混沌旗帜'
+  - '意志力'
+  - '记述吧，勇于开拓星辰之人'
+  - '维京血脉'
+  - '血浪战骸'
+  - '不杀誓约·Oath·Non·Killing'
+  - '星之开拓者'
+  - '探险员领军'
+  - '殖民主义'

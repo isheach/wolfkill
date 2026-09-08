@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <RootNamespace>KsgTest</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\..\scripts\Model\*.cs" Link="Model\%(Filename)%(Extension)" />
+    <Compile Include="..\..\scripts\Engine\KsgWorld.cs" Link="Engine\KsgWorld.cs" />
+    <Compile Include="..\..\scripts\Engine\WorldCampaign.cs" Link="Engine\WorldCampaign.cs" />
+    <Compile Include="..\..\scripts\Engine\WorldAdvanced.cs" Link="Engine\WorldAdvanced.cs" />
+    <Compile Include="..\..\scripts\Engine\Dice.cs" Link="Engine\Dice.cs" />
+    <Compile Include="..\..\scripts\Engine\KsgBattle.cs" Link="Engine\KsgBattle.cs" />
+    <Compile Include="..\..\scripts\Engine\KsgEffects.cs" Link="Engine\KsgEffects.cs" />
+    <Compile Include="..\..\scripts\Building\CardBuildRules.cs" Link="Building\CardBuildRules.cs" />
+    <Compile Include="..\..\scripts\Save\SaveCodec.cs" Link="Save\SaveCodec.cs" />
+    <Compile Include="..\..\scripts\Save\StableIds.cs" Link="Save\StableIds.cs" />
+    <Compile Include="..\..\scripts\Save\Current.cs" Link="Save\Current.cs" />
+  </ItemGroup>
+</Project>

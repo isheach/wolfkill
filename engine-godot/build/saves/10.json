@@ -1,0 +1,54 @@
+{
+  "version": 3,
+  "id": 10,
+  "name": "\u5723\u676F\u5FA1\u4E3B\u00B7\u6307\u6325\u5B98",
+  "true_name": "\u5723\u676F\u5FA1\u4E3B\u00B7\u6307\u6325\u5B98",
+  "avatar_path": "",
+  "utype": 2,
+  "servant_class": 0,
+  "hidden_attr": -1,
+  "level": 40,
+  "faction": 1,
+  "law": 2,
+  "moral": 2,
+  "traits": 1,
+  "fp": 1,
+  "cs": 3,
+  "roaming": 0,
+  "alive": true,
+  "attr": [
+    20,
+    20,
+    20,
+    25,
+    20,
+    0,
+    40
+  ],
+  "attr_perm": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "mp_cap": 40,
+  "mp_floor": -50,
+  "mp_cur": 40,
+  "skills": [
+    {
+      "id": 242
+    },
+    {
+      "id": 553
+    },
+    {
+      "id": 288
+    }
+  ],
+  "phantasms": [],
+  "items": [],
+  "status": []
+}

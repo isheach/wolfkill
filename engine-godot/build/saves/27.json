@@ -1,0 +1,59 @@
+{
+  "version": 3,
+  "id": 27,
+  "name": "玻吕克斯",
+  "true_name": "玻吕克斯",
+  "avatar_path": "",
+  "utype": 2,
+  "servant_class": 0,
+  "hidden_attr": -1,
+  "level": 50,
+  "faction": 0,
+  "law": 2,
+  "moral": 1,
+  "traits": 1,
+  "fp": 1,
+  "cs": 3,
+  "roaming": 0,
+  "alive": true,
+  "main_job": "退魔师",
+  "sub_job": "",
+  "attr": [
+    170,
+    200,
+    170,
+    180,
+    210,
+    0,
+    30
+  ],
+  "attr_perm": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "mp_cap": 150,
+  "mp_floor": -100,
+  "mp_cur": 150,
+  "skills": [
+    {
+      "id": 575,
+      "dname": "圣子之心-鸦"
+    },
+    {
+      "id": 547,
+      "dname": "受束之鸦"
+    },
+    {
+      "id": 226,
+      "dname": "嗜血的传承"
+    }
+  ],
+  "phantasms": [],
+  "items": [],
+  "status": []
+}

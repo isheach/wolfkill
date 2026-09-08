@@ -1,0 +1,26 @@
+ERROR: Failed to open 'user://logs/godot2026-09-08T01.12.41.log'.
+   at: copy (core/io/dir_access.cpp:429)
+ERROR: Failed to open log file for writing: user://logs/godot.log
+   at: rotate_file (core/io/logger.cpp:169)
+You must install or update .NET to run this application.
+
+App: D:\desktop\wolfkill\engine-godot\build\KsgGodot.exe
+Architecture: x64
+Framework: 'Microsoft.NETCore.App', version '8.0.0' (x64)
+.NET location: D:\desktop\wolfkill\engine-godot\build\data_KsgGodot_windows_x86_64\
+
+No frameworks were found.
+
+Learn more:
+https://aka.ms/dotnet/app-launch-failed
+
+To install missing framework, download:
+https://aka.ms/dotnet-core-applaunch?framework=Microsoft.NETCore.App&framework_version=8.0.0&arch=x64&rid=win-x64&os=win10
+ERROR: hostfxr_initialize_for_dotnet_command_line failed with code: -2147450730
+   at: initialize_hostfxr_self_contained (modules/mono/mono_gd/gd_mono.cpp:408)
+ERROR: Parameter "load_assembly_and_get_function_pointer" is null.
+   at: initialize_hostfxr_and_godot_plugins (modules/mono/mono_gd/gd_mono.cpp:475)
+ERROR: Parameter "godot_plugins_initialize" is null.
+   at: initialize (modules/mono/mono_gd/gd_mono.cpp:656)
+ERROR: Failed to read the root certificate store.
+   at: get_system_ca_certificates (platform/windows/os_windows.cpp:2582)

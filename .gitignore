@@ -1,0 +1,13 @@
+# 构建中间产物与缓存（各子项目通用）
+.godot/
+bin/
+obj/
+__pycache__/
+*.user
+Thumbs.db
+.DS_Store
+
+# 超过 GitHub 100 MiB 单文件限制的可执行文件（暂不入库）
+KsG空想圣杯-Windows版/KsG空想圣杯.exe
+engine-godot/build/KsgGodot.exe
+engine-godot/build/KsG空想圣杯.exe
