@@ -19,6 +19,58 @@ public static class ResourceDb
 
     public static IReadOnlyList<ResourceDef> All => _all;
 
+    /// <summary>可移植数据根:exe 旁 data/ 目录(存在才启用);为空则回退 res://data/(编辑器/打包内置)。</summary>
+    private static string _portableDataDir;
+
+    private static string PortableDataDir
+    {
+        get
+        {
+            if (_portableDataDir != null) return _portableDataDir;
+            try
+            {
+                string exePath = OS.GetExecutablePath();
+                string dir = Path.GetDirectoryName(exePath);
+                if (!string.IsNullOrEmpty(dir))
+                {
+                    string probe = Path.Combine(dir, "data");
+                    if (Directory.Exists(probe)) _portableDataDir = probe;
+                }
+            }
+            catch (Exception ex)
+            {
+                GD.PushWarning($"[资源库] exe 旁 data/ 检测失败({ex.GetType().Name}),使用内置数据");
+            }
+            _portableDataDir ??= "";
+            return _portableDataDir;
+        }
+    }
+
+    /// <summary>读取数据文件:优先 exe 旁 data/(可便携、免重新导出),回退 res://data/(内置)。均无返回 null。</summary>
+    private static string ReadDataFile(string fileName)
+    {
+        string dir = PortableDataDir;
+        if (dir.Length > 0)
+        {
+            string abs = Path.Combine(dir, fileName);
+            try
+            {
+                if (System.IO.File.Exists(abs))
+                {
+                    GD.Print($"[资源库] 使用外部数据: {abs}");
+                    return System.IO.File.ReadAllText(abs);
+                }
+            }
+            catch (Exception ex)
+            {
+                GD.PushWarning($"[资源库] 外部数据读取失败({fileName}): {ex.Message},回退内置");
+            }
+        }
+        const string prefix = "res://data/";
+        string res = prefix + fileName;
+        return Godot.FileAccess.FileExists(res) ? Godot.FileAccess.GetFileAsString(res) : null;
+    }
+
     /// <summary>技能等级变体表: id → (等级范围, 各级数值序列数组[每条效果/序列])。来自 rules 原文(批次1,233个)。</summary>
     public static Dictionary<int, (string[] RankRange, List<int[]> Series)> RankVariants { get; } = new();
 
@@ -30,16 +82,15 @@ public static class ResourceDb
     {
         if (Loaded) return true;
 
-        const string path = "res://data/ksg_resources.json";
-        if (!Godot.FileAccess.FileExists(path))
+        string text = ReadDataFile("ksg_resources.json");
+        if (text == null)
         {
-            GD.PushError("资源库 JSON 不存在: " + path);
+            GD.PushError("资源库 JSON 不存在(exe 旁 data/ 与 res:// 均无): ksg_resources.json");
             return false;
         }
 
         try
         {
-            string text = Godot.FileAccess.GetFileAsString(path);
             using JsonDocument json = JsonDocument.Parse(text);
             JsonElement root = json.RootElement;
             JsonElement resources = Required(root, "resources", "root");
@@ -778,15 +829,14 @@ public static class ResourceDb
     private static void LoadRankVariants()
     {
         RankVariants.Clear();
-        const string path = "res://data/rank_variants.json";
-        if (!Godot.FileAccess.FileExists(path))
+        string text = ReadDataFile("rank_variants.json");
+        if (text == null)
         {
-            GD.Print("[等级变体] 未找到 rank_variants.json(仍可用系数缩放兜底)");
+            GD.Print("[等级变体] 未找到 rank_variants.json(exe 旁 data/ 与 res:// 均无;仍可用系数缩放兜底)");
             return;
         }
         try
         {
-            string text = Godot.FileAccess.GetFileAsString(path);
             using JsonDocument json = JsonDocument.Parse(text);
             JsonElement root = json.RootElement;
             if (!root.TryGetProperty("skills", out JsonElement skills) || skills.ValueKind != JsonValueKind.Array)
@@ -829,15 +879,14 @@ public static class ResourceDb
     private static void LoadSkillOwner()
     {
         SkillOwner.Clear();
-        const string path = "res://data/skill_owner.json";
-        if (!Godot.FileAccess.FileExists(path))
+        string text = ReadDataFile("skill_owner.json");
+        if (text == null)
         {
             GD.Print("[技能归属] 未找到 skill_owner.json(技能不限从者/御主)");
             return;
         }
         try
         {
-            string text = Godot.FileAccess.GetFileAsString(path);
             using JsonDocument json = JsonDocument.Parse(text);
             JsonElement root = json.RootElement;
             if (!root.TryGetProperty("skills", out JsonElement skills) || skills.ValueKind != JsonValueKind.Array)

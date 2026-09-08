@@ -1,0 +1,2344 @@
+{
+ "skills": [
+  {
+   "id": 1,
+   "name": "狂化",
+   "owner": "servant"
+  },
+  {
+   "id": 2,
+   "name": "勇猛",
+   "owner": "servant"
+  },
+  {
+   "id": 3,
+   "name": "二重召唤",
+   "owner": "servant"
+  },
+  {
+   "id": 10,
+   "name": "凯旋的魅力",
+   "owner": "servant"
+  },
+  {
+   "id": 12,
+   "name": "炎烧之魔眼",
+   "owner": "master"
+  },
+  {
+   "id": 16,
+   "name": "领袖气质·高洁",
+   "owner": "servant"
+  },
+  {
+   "id": 17,
+   "name": "直感·心眼",
+   "owner": "servant"
+  },
+  {
+   "id": 18,
+   "name": "魔力放出·炎",
+   "owner": "servant"
+  },
+  {
+   "id": 19,
+   "name": "战斗续行·不屈",
+   "owner": "servant"
+  },
+  {
+   "id": 20,
+   "name": "黄金律·聚敛",
+   "owner": "servant"
+  },
+  {
+   "id": 21,
+   "name": "皇帝特权",
+   "owner": "servant"
+  },
+  {
+   "id": 22,
+   "name": "石化之魔眼",
+   "owner": "servant"
+  },
+  {
+   "id": 23,
+   "name": "千里眼·鹰之瞳",
+   "owner": "servant"
+  },
+  {
+   "id": 33,
+   "name": "宝石魔术·魔力的结晶",
+   "owner": "master"
+  },
+  {
+   "id": 34,
+   "name": "强筋锻骨·铁之躯",
+   "owner": "master"
+  },
+  {
+   "id": 35,
+   "name": "神经衰弱·扰心",
+   "owner": "master"
+  },
+  {
+   "id": 36,
+   "name": "超越期待·千里眼(现世视)",
+   "owner": "both"
+  },
+  {
+   "id": 37,
+   "name": "军略",
+   "owner": "servant"
+  },
+  {
+   "id": 38,
+   "name": "透化",
+   "owner": "servant"
+  },
+  {
+   "id": 39,
+   "name": "精灵的加护",
+   "owner": "servant"
+  },
+  {
+   "id": 40,
+   "name": "怪力",
+   "owner": "servant"
+  },
+  {
+   "id": 41,
+   "name": "爱之黑痣(狂恋咒)",
+   "owner": "servant"
+  },
+  {
+   "id": 42,
+   "name": "毒之食馔",
+   "owner": "servant"
+  },
+  {
+   "id": 43,
+   "name": "卢恩符文",
+   "owner": "servant"
+  },
+  {
+   "id": 53,
+   "name": "圈境",
+   "owner": "servant"
+  },
+  {
+   "id": 57,
+   "name": "魅惑的美声",
+   "owner": "servant"
+  },
+  {
+   "id": 58,
+   "name": "军师的指挥",
+   "owner": "servant"
+  },
+  {
+   "id": 60,
+   "name": "无辜的怪物",
+   "owner": "servant"
+  },
+  {
+   "id": 62,
+   "name": "破坏工作",
+   "owner": "servant"
+  },
+  {
+   "id": 63,
+   "name": "暴风雨的航海家",
+   "owner": "servant"
+  },
+  {
+   "id": 64,
+   "name": "吻魔",
+   "owner": "servant"
+  },
+  {
+   "id": 66,
+   "name": "美之显现",
+   "owner": "servant"
+  },
+  {
+   "id": 69,
+   "name": "生命秘术",
+   "owner": "master"
+  },
+  {
+   "id": 70,
+   "name": "天人合一",
+   "owner": "master"
+  },
+  {
+   "id": 71,
+   "name": "活杀自在",
+   "owner": "master"
+  },
+  {
+   "id": 72,
+   "name": "二天一流",
+   "owner": "master"
+  },
+  {
+   "id": 73,
+   "name": "伪·直死之魔眼",
+   "owner": "both"
+  },
+  {
+   "id": 74,
+   "name": "对胜利的确信",
+   "owner": "master"
+  },
+  {
+   "id": 75,
+   "name": "猩红收割",
+   "owner": "master"
+  },
+  {
+   "id": 76,
+   "name": "资源补给",
+   "owner": "master"
+  },
+  {
+   "id": 83,
+   "name": "狂化EX",
+   "owner": "servant"
+  },
+  {
+   "id": 84,
+   "name": "真名看破",
+   "owner": "servant"
+  },
+  {
+   "id": 85,
+   "name": "神明裁决",
+   "owner": "servant"
+  },
+  {
+   "id": 86,
+   "name": "伪装工作",
+   "owner": "servant"
+  },
+  {
+   "id": 87,
+   "name": "复仇者",
+   "owner": "servant"
+  },
+  {
+   "id": 88,
+   "name": "忘却补正",
+   "owner": "servant"
+  },
+  {
+   "id": 89,
+   "name": "自我回复",
+   "owner": "servant"
+  },
+  {
+   "id": 90,
+   "name": "己阵防御",
+   "owner": "servant"
+  },
+  {
+   "id": 91,
+   "name": "藏知的司书",
+   "owner": "servant"
+  },
+  {
+   "id": 92,
+   "name": "宗和的心得",
+   "owner": "servant"
+  },
+  {
+   "id": 93,
+   "name": "专精百般",
+   "owner": "servant"
+  },
+  {
+   "id": 94,
+   "name": "骑士的武略",
+   "owner": "servant"
+  },
+  {
+   "id": 95,
+   "name": "高速神言",
+   "owner": "servant"
+  },
+  {
+   "id": 96,
+   "name": "重整旗鼓",
+   "owner": "servant"
+  },
+  {
+   "id": 97,
+   "name": "金羊毛",
+   "owner": "servant"
+  },
+  {
+   "id": 98,
+   "name": "回归初始",
+   "owner": "servant"
+  },
+  {
+   "id": 99,
+   "name": "避矢的加护",
+   "owner": "servant"
+  },
+  {
+   "id": 100,
+   "name": "收藏家",
+   "owner": "servant"
+  },
+  {
+   "id": 101,
+   "name": "魔术(神代魔术)",
+   "owner": "servant"
+  },
+  {
+   "id": 102,
+   "name": "石化之魔眼(封印)",
+   "owner": "servant"
+  },
+  {
+   "id": 103,
+   "name": "精神污染",
+   "owner": "servant"
+  },
+  {
+   "id": 125,
+   "name": "追逐的美学",
+   "owner": "both"
+  },
+  {
+   "id": 126,
+   "name": "不屈的意志",
+   "owner": "servant"
+  },
+  {
+   "id": 127,
+   "name": "理性蒸发",
+   "owner": "servant"
+  },
+  {
+   "id": 128,
+   "name": "流电学",
+   "owner": "servant"
+  },
+  {
+   "id": 129,
+   "name": "深渊的邪视",
+   "owner": "servant"
+  },
+  {
+   "id": 130,
+   "name": "雾夜的凶杀",
+   "owner": "servant"
+  },
+  {
+   "id": 131,
+   "name": "野兽的逻辑",
+   "owner": "servant"
+  },
+  {
+   "id": 132,
+   "name": "自我进化",
+   "owner": "servant"
+  },
+  {
+   "id": 133,
+   "name": "越过阿卡迪亚",
+   "owner": "servant"
+  },
+  {
+   "id": 134,
+   "name": "魔力放出(炎)",
+   "owner": "servant"
+  },
+  {
+   "id": 135,
+   "name": "自我保存",
+   "owner": "servant"
+  },
+  {
+   "id": 136,
+   "name": "过载",
+   "owner": "servant"
+  },
+  {
+   "id": 137,
+   "name": "剑之凯旋",
+   "owner": "servant"
+  },
+  {
+   "id": 138,
+   "name": "外科手术",
+   "owner": "servant"
+  },
+  {
+   "id": 139,
+   "name": "无冠之武艺",
+   "owner": "both"
+  },
+  {
+   "id": 140,
+   "name": "女神的护佑",
+   "owner": "servant"
+  },
+  {
+   "id": 141,
+   "name": "神授的智慧",
+   "owner": "servant"
+  },
+  {
+   "id": 142,
+   "name": "启示",
+   "owner": "servant"
+  },
+  {
+   "id": 143,
+   "name": "平稳的无花果",
+   "owner": "servant"
+  },
+  {
+   "id": 144,
+   "name": "黄金苹果",
+   "owner": "both"
+  },
+  {
+   "id": 145,
+   "name": "卷烟之狮子",
+   "owner": "servant"
+  },
+  {
+   "id": 146,
+   "name": "狩猎卡莱顿的野猪",
+   "owner": "servant"
+  },
+  {
+   "id": 147,
+   "name": "贫者的见识",
+   "owner": "servant"
+  },
+  {
+   "id": 148,
+   "name": "受虐之荣光",
+   "owner": "servant"
+  },
+  {
+   "id": 149,
+   "name": "屠龙",
+   "owner": "servant"
+  },
+  {
+   "id": 150,
+   "name": "永生的奉献",
+   "owner": "servant"
+  },
+  {
+   "id": 151,
+   "name": "护国的鬼将",
+   "owner": "servant"
+  },
+  {
+   "id": 152,
+   "name": "艺术审美",
+   "owner": "servant"
+  },
+  {
+   "id": 153,
+   "name": "圣人",
+   "owner": "servant"
+  },
+  {
+   "id": 154,
+   "name": "魔力附加",
+   "owner": "servant"
+  },
+  {
+   "id": 155,
+   "name": "使魔(鸽)",
+   "owner": "servant"
+  },
+  {
+   "id": 156,
+   "name": "数秘术",
+   "owner": "servant"
+  },
+  {
+   "id": 157,
+   "name": "虚无生者的叹息",
+   "owner": "servant"
+  },
+  {
+   "id": 188,
+   "name": "老练",
+   "owner": "servant"
+  },
+  {
+   "id": 189,
+   "name": "神性",
+   "owner": "servant"
+  },
+  {
+   "id": 190,
+   "name": "病弱",
+   "owner": "servant"
+  },
+  {
+   "id": 191,
+   "name": "高千穗的白色大蛇",
+   "owner": "servant"
+  },
+  {
+   "id": 192,
+   "name": "蝮蛇之眼",
+   "owner": "servant"
+  },
+  {
+   "id": 193,
+   "name": "大蛇之咒",
+   "owner": "servant"
+  },
+  {
+   "id": 194,
+   "name": "绝招",
+   "owner": "servant"
+  },
+  {
+   "id": 195,
+   "name": "阴阳交汇",
+   "owner": "servant"
+  },
+  {
+   "id": 196,
+   "name": "人斩",
+   "owner": "servant"
+  },
+  {
+   "id": 197,
+   "name": "拔刀无二",
+   "owner": "servant"
+  },
+  {
+   "id": 198,
+   "name": "天下布武",
+   "owner": "servant"
+  },
+  {
+   "id": 199,
+   "name": "维新的英雄",
+   "owner": "servant"
+  },
+  {
+   "id": 200,
+   "name": "恶魔的证明",
+   "owner": "servant"
+  },
+  {
+   "id": 201,
+   "name": "鬼武藏的遗嘱",
+   "owner": "servant"
+  },
+  {
+   "id": 202,
+   "name": "天逆矛",
+   "owner": "servant"
+  },
+  {
+   "id": 203,
+   "name": "魔王",
+   "owner": "servant"
+  },
+  {
+   "id": 204,
+   "name": "血染的蛮勇",
+   "owner": "servant"
+  },
+  {
+   "id": 205,
+   "name": "击剑矫捷如鹰隼",
+   "owner": "servant"
+  },
+  {
+   "id": 206,
+   "name": "维新之龙",
+   "owner": "servant"
+  },
+  {
+   "id": 207,
+   "name": "无敌之剑",
+   "owner": "servant"
+  },
+  {
+   "id": 208,
+   "name": "人斩彦斋",
+   "owner": "servant"
+  },
+  {
+   "id": 209,
+   "name": "船中八策",
+   "owner": "servant"
+  },
+  {
+   "id": 223,
+   "name": "女难之相",
+   "owner": "servant"
+  },
+  {
+   "id": 224,
+   "name": "沉着冷静",
+   "owner": "servant"
+  },
+  {
+   "id": 225,
+   "name": "梦幻的魅力",
+   "owner": "servant"
+  },
+  {
+   "id": 226,
+   "name": "影乡的武练",
+   "owner": "servant"
+  },
+  {
+   "id": 227,
+   "name": "布利里安德罗的嘶鸣",
+   "owner": "servant"
+  },
+  {
+   "id": 228,
+   "name": "暗夜的武练",
+   "owner": "servant"
+  },
+  {
+   "id": 229,
+   "name": "战斗加速(影)",
+   "owner": "servant"
+  },
+  {
+   "id": 230,
+   "name": "精灵的狂躁",
+   "owner": "servant"
+  },
+  {
+   "id": 231,
+   "name": "英雄制作",
+   "owner": "servant"
+  },
+  {
+   "id": 232,
+   "name": "赤枝的继承者",
+   "owner": "servant"
+  },
+  {
+   "id": 233,
+   "name": "圣者的数字",
+   "owner": "servant"
+  },
+  {
+   "id": 234,
+   "name": "九伟人之铠",
+   "owner": "servant"
+  },
+  {
+   "id": 235,
+   "name": "妊娠之花",
+   "owner": "servant"
+  },
+  {
+   "id": 236,
+   "name": "猛犬杀手",
+   "owner": "servant"
+  },
+  {
+   "id": 237,
+   "name": "赤枝的骑士",
+   "owner": "servant"
+  },
+  {
+   "id": 238,
+   "name": "魔境的智慧",
+   "owner": "servant"
+  },
+  {
+   "id": 239,
+   "name": "守护的誓约",
+   "owner": "servant"
+  },
+  {
+   "id": 240,
+   "name": "顷刻一击",
+   "owner": "servant"
+  },
+  {
+   "id": 241,
+   "name": "新娘的守护者",
+   "owner": "servant"
+  },
+  {
+   "id": 242,
+   "name": "光之地平线",
+   "owner": "servant"
+  },
+  {
+   "id": 243,
+   "name": "幻术",
+   "owner": "servant"
+  },
+  {
+   "id": 268,
+   "name": "宇宙反应器",
+   "owner": "servant"
+  },
+  {
+   "id": 269,
+   "name": "龙种",
+   "owner": "servant"
+  },
+  {
+   "id": 270,
+   "name": "天性的肉体",
+   "owner": "servant"
+  },
+  {
+   "id": 271,
+   "name": "龙之心",
+   "owner": "servant"
+  },
+  {
+   "id": 272,
+   "name": "谷间深渊",
+   "owner": "servant"
+  },
+  {
+   "id": 273,
+   "name": "雾夜的散步者",
+   "owner": "servant"
+  },
+  {
+   "id": 274,
+   "name": "气息感知",
+   "owner": "servant"
+  },
+  {
+   "id": 275,
+   "name": "鉴识眼",
+   "owner": "servant"
+  },
+  {
+   "id": 276,
+   "name": "绝冻的魅力",
+   "owner": "servant"
+  },
+  {
+   "id": 277,
+   "name": "兽性的豪腕",
+   "owner": "servant"
+  },
+  {
+   "id": 278,
+   "name": "魔力放出(冰)",
+   "owner": "servant"
+  },
+  {
+   "id": 279,
+   "name": "鲜花战争",
+   "owner": "servant"
+  },
+  {
+   "id": 280,
+   "name": "魔力放出(风)",
+   "owner": "servant"
+  },
+  {
+   "id": 281,
+   "name": "圣杯的宠爱",
+   "owner": "servant"
+  },
+  {
+   "id": 282,
+   "name": "军师的忠言",
+   "owner": "servant"
+  },
+  {
+   "id": 283,
+   "name": "神的护佑",
+   "owner": "servant"
+  },
+  {
+   "id": 284,
+   "name": "湖之加护",
+   "owner": "servant"
+  },
+  {
+   "id": 285,
+   "name": "千貌",
+   "owner": "servant"
+  },
+  {
+   "id": 286,
+   "name": "幽弋",
+   "owner": "servant"
+  },
+  {
+   "id": 287,
+   "name": "月之湖",
+   "owner": "servant"
+  },
+  {
+   "id": 288,
+   "name": "月女神的压力",
+   "owner": "servant"
+  },
+  {
+   "id": 289,
+   "name": "太平要术",
+   "owner": "servant"
+  },
+  {
+   "id": 290,
+   "name": "大江之鬼闹",
+   "owner": "servant"
+  },
+  {
+   "id": 291,
+   "name": "救世的航海家",
+   "owner": "servant"
+  },
+  {
+   "id": 292,
+   "name": "替罪羊",
+   "owner": "servant"
+  },
+  {
+   "id": 293,
+   "name": "影灯笼",
+   "owner": "servant"
+  },
+  {
+   "id": 321,
+   "name": "当代不吉",
+   "owner": "servant"
+  },
+  {
+   "id": 322,
+   "name": "龙之吐息",
+   "owner": "servant"
+  },
+  {
+   "id": 323,
+   "name": "龙之吐息(炎)",
+   "owner": "servant"
+  },
+  {
+   "id": 324,
+   "name": "吸血",
+   "owner": "servant"
+  },
+  {
+   "id": 325,
+   "name": "嗜虐体质",
+   "owner": "servant"
+  },
+  {
+   "id": 326,
+   "name": "女帝的魅力",
+   "owner": "servant"
+  },
+  {
+   "id": 327,
+   "name": "信仰的加护",
+   "owner": "servant"
+  },
+  {
+   "id": 328,
+   "name": "千里眼·业之瞳",
+   "owner": "servant"
+  },
+  {
+   "id": 329,
+   "name": "金刚之体",
+   "owner": "servant"
+  },
+  {
+   "id": 330,
+   "name": "魔力放出(光)",
+   "owner": "servant"
+  },
+  {
+   "id": 331,
+   "name": "拷问技术",
+   "owner": "servant"
+  },
+  {
+   "id": 332,
+   "name": "神速",
+   "owner": "servant"
+  },
+  {
+   "id": 333,
+   "name": "圣索菲亚的祈祷",
+   "owner": "both"
+  },
+  {
+   "id": 334,
+   "name": "沉溺恋情潸然泪下",
+   "owner": "servant"
+  },
+  {
+   "id": 335,
+   "name": "火力支援(炮)",
+   "owner": "both"
+  },
+  {
+   "id": 336,
+   "name": "恸哭外装",
+   "owner": "servant"
+  },
+  {
+   "id": 337,
+   "name": "非常大权",
+   "owner": "servant"
+  },
+  {
+   "id": 338,
+   "name": "终焉特权",
+   "owner": "servant"
+  },
+  {
+   "id": 339,
+   "name": "王途踏破",
+   "owner": "servant"
+  },
+  {
+   "id": 340,
+   "name": "可能性之光",
+   "owner": "servant"
+  },
+  {
+   "id": 341,
+   "name": "骥足百般",
+   "owner": "servant"
+  },
+  {
+   "id": 342,
+   "name": "圣骑士帝",
+   "owner": "servant"
+  },
+  {
+   "id": 343,
+   "name": "燎原之火",
+   "owner": "servant"
+  },
+  {
+   "id": 354,
+   "name": "腹语术",
+   "owner": "servant"
+  },
+  {
+   "id": 355,
+   "name": "阴谋制作",
+   "owner": "servant"
+  },
+  {
+   "id": 356,
+   "name": "阵地制作(工作室)",
+   "owner": "servant"
+  },
+  {
+   "id": 357,
+   "name": "享乐主义",
+   "owner": "servant"
+  },
+  {
+   "id": 358,
+   "name": "淑女服饰之爱",
+   "owner": "servant"
+  },
+  {
+   "id": 359,
+   "name": "邪智的魅力",
+   "owner": "servant"
+  },
+  {
+   "id": 360,
+   "name": "与此同时",
+   "owner": "servant"
+  },
+  {
+   "id": 361,
+   "name": "打开的是梦想之门",
+   "owner": "servant"
+  },
+  {
+   "id": 362,
+   "name": "骰子的选择",
+   "owner": "servant"
+  },
+  {
+   "id": 363,
+   "name": "荒事舞",
+   "owner": "servant"
+  },
+  {
+   "id": 364,
+   "name": "数学性思考",
+   "owner": "servant"
+  },
+  {
+   "id": 365,
+   "name": "进化的伊丽莎白",
+   "owner": "servant"
+  },
+  {
+   "id": 366,
+   "name": "合上的是现实之帷幕",
+   "owner": "servant"
+  },
+  {
+   "id": 367,
+   "name": "白雪公主",
+   "owner": "servant"
+  },
+  {
+   "id": 368,
+   "name": "魔弹射手",
+   "owner": "servant"
+  },
+  {
+   "id": 369,
+   "name": "勇者大原则",
+   "owner": "servant"
+  },
+  {
+   "id": 370,
+   "name": "计算尺武器",
+   "owner": "servant"
+  },
+  {
+   "id": 371,
+   "name": "无辜的世界",
+   "owner": "servant"
+  },
+  {
+   "id": 372,
+   "name": "鞍马奇才",
+   "owner": "servant"
+  },
+  {
+   "id": 373,
+   "name": "游侠骑士大冒险",
+   "owner": "servant"
+  },
+  {
+   "id": 374,
+   "name": "统领星球之物",
+   "owner": "servant"
+  },
+  {
+   "id": 375,
+   "name": "绯红勇者传说",
+   "owner": "servant"
+  },
+  {
+   "id": 376,
+   "name": "堕天之魔",
+   "owner": "servant"
+  },
+  {
+   "id": 377,
+   "name": "人偶神乐",
+   "owner": "servant"
+  },
+  {
+   "id": 378,
+   "name": "玻璃灰姑娘",
+   "owner": "servant"
+  },
+  {
+   "id": 379,
+   "name": "星之笼",
+   "owner": "servant"
+  },
+  {
+   "id": 380,
+   "name": "一夜羽织",
+   "owner": "servant"
+  },
+  {
+   "id": 381,
+   "name": "感染",
+   "owner": "servant"
+  },
+  {
+   "id": 382,
+   "name": "同行随从",
+   "owner": "servant"
+  },
+  {
+   "id": 403,
+   "name": "专心一意",
+   "owner": "servant"
+  },
+  {
+   "id": 404,
+   "name": "大量生产",
+   "owner": "servant"
+  },
+  {
+   "id": 405,
+   "name": "蒸汽装置输出提升",
+   "owner": "servant"
+  },
+  {
+   "id": 406,
+   "name": "概念改良",
+   "owner": "servant"
+  },
+  {
+   "id": 407,
+   "name": "特斯拉线圈",
+   "owner": "servant"
+  },
+  {
+   "id": 408,
+   "name": "机械铠甲",
+   "owner": "servant"
+  },
+  {
+   "id": 409,
+   "name": "百章之星",
+   "owner": "servant"
+  },
+  {
+   "id": 410,
+   "name": "星之开拓者EX",
+   "owner": "both"
+  },
+  {
+   "id": 415,
+   "name": "妖精骑士",
+   "owner": "servant"
+  },
+  {
+   "id": 416,
+   "name": "祭神的巫女",
+   "owner": "servant"
+  },
+  {
+   "id": 417,
+   "name": "钢之信仰",
+   "owner": "servant"
+  },
+  {
+   "id": 418,
+   "name": "梦魔之畔",
+   "owner": "servant"
+  },
+  {
+   "id": 419,
+   "name": "千里眼(千里眼·现世视)",
+   "owner": "both"
+  },
+  {
+   "id": 420,
+   "name": "秀丽的容貌",
+   "owner": "servant"
+  },
+  {
+   "id": 421,
+   "name": "受肉精灵",
+   "owner": "servant"
+  },
+  {
+   "id": 422,
+   "name": "盛开于夏夜之花",
+   "owner": "servant"
+  },
+  {
+   "id": 423,
+   "name": "自我暗示",
+   "owner": "servant"
+  },
+  {
+   "id": 424,
+   "name": "米可诺斯☆米可科尔",
+   "owner": "servant"
+  },
+  {
+   "id": 425,
+   "name": "予其手以光",
+   "owner": "servant"
+  },
+  {
+   "id": 426,
+   "name": "愉快型魔术礼装",
+   "owner": "servant"
+  },
+  {
+   "id": 427,
+   "name": "英灵猎手(死神)",
+   "owner": "servant"
+  },
+  {
+   "id": 428,
+   "name": "手杖魔术",
+   "owner": "servant"
+  },
+  {
+   "id": 429,
+   "name": "米可诺斯之锤",
+   "owner": "servant"
+  },
+  {
+   "id": 430,
+   "name": "巫邪灵媒",
+   "owner": "servant"
+  },
+  {
+   "id": 431,
+   "name": "天体轨道调整",
+   "owner": "servant"
+  },
+  {
+   "id": 441,
+   "name": "怪力(魔)",
+   "owner": "servant"
+  },
+  {
+   "id": 442,
+   "name": "魔力放出(宝石)",
+   "owner": "servant"
+  },
+  {
+   "id": 443,
+   "name": "天狗的兵法",
+   "owner": "servant"
+  },
+  {
+   "id": 444,
+   "name": "殿军的心得",
+   "owner": "servant"
+  },
+  {
+   "id": 445,
+   "name": "战士的咆哮",
+   "owner": "servant"
+  },
+  {
+   "id": 446,
+   "name": "昏暗密林之颚",
+   "owner": "servant"
+  },
+  {
+   "id": 447,
+   "name": "变转之魔(神)",
+   "owner": "servant"
+  },
+  {
+   "id": 448,
+   "name": "铁之傅",
+   "owner": "servant"
+  },
+  {
+   "id": 449,
+   "name": "豹之加护",
+   "owner": "servant"
+  },
+  {
+   "id": 450,
+   "name": "变容",
+   "owner": "servant"
+  },
+  {
+   "id": 451,
+   "name": "魔力放出(槛)",
+   "owner": "servant"
+  },
+  {
+   "id": 452,
+   "name": "仁王立姿",
+   "owner": "servant"
+  },
+  {
+   "id": 453,
+   "name": "晚钟",
+   "owner": "servant"
+  },
+  {
+   "id": 454,
+   "name": "怨灵降伏",
+   "owner": "servant"
+  },
+  {
+   "id": 464,
+   "name": "魔性鬼神",
+   "owner": "servant"
+  },
+  {
+   "id": 465,
+   "name": "魔力放出(水)",
+   "owner": "servant"
+  },
+  {
+   "id": 466,
+   "name": "烈士的兵法",
+   "owner": "servant"
+  },
+  {
+   "id": 467,
+   "name": "魔力放出(迅雷)",
+   "owner": "servant"
+  },
+  {
+   "id": 468,
+   "name": "神魔屠戮",
+   "owner": "servant"
+  },
+  {
+   "id": 469,
+   "name": "红玉之书",
+   "owner": "servant"
+  },
+  {
+   "id": 480,
+   "name": "增殖的源",
+   "owner": "master"
+  },
+  {
+   "id": 481,
+   "name": "反击屏障",
+   "owner": "master"
+  },
+  {
+   "id": 482,
+   "name": "强力召唤",
+   "owner": "master"
+  },
+  {
+   "id": 483,
+   "name": "移动要塞",
+   "owner": "master"
+  },
+  {
+   "id": 484,
+   "name": "机械革命",
+   "owner": "master"
+  },
+  {
+   "id": 485,
+   "name": "义体黎明",
+   "owner": "master"
+  },
+  {
+   "id": 486,
+   "name": "终极巨像",
+   "owner": "master"
+  },
+  {
+   "id": 487,
+   "name": "自我原型",
+   "owner": "master"
+  },
+  {
+   "id": 488,
+   "name": "闲人免进",
+   "owner": "master"
+  },
+  {
+   "id": 489,
+   "name": "罗生三相",
+   "owner": "master"
+  },
+  {
+   "id": 490,
+   "name": "众星拱辰",
+   "owner": "master"
+  },
+  {
+   "id": 491,
+   "name": "阵式混合",
+   "owner": "master"
+  },
+  {
+   "id": 492,
+   "name": "改天换日",
+   "owner": "master"
+  },
+  {
+   "id": 493,
+   "name": "护身结界",
+   "owner": "master"
+  },
+  {
+   "id": 494,
+   "name": "巫蛊人偶",
+   "owner": "master"
+  },
+  {
+   "id": 495,
+   "name": "枯萎之手",
+   "owner": "master"
+  },
+  {
+   "id": 496,
+   "name": "法力汲取",
+   "owner": "master"
+  },
+  {
+   "id": 497,
+   "name": "恶意中伤",
+   "owner": "master"
+  },
+  {
+   "id": 498,
+   "name": "刻印献祭",
+   "owner": "master"
+  },
+  {
+   "id": 499,
+   "name": "祟神使役",
+   "owner": "master"
+  },
+  {
+   "id": 500,
+   "name": "分割思考",
+   "owner": "master"
+  },
+  {
+   "id": 501,
+   "name": "自动装械",
+   "owner": "master"
+  },
+  {
+   "id": 502,
+   "name": "炼成总机",
+   "owner": "master"
+  },
+  {
+   "id": 503,
+   "name": "活体熔炉",
+   "owner": "master"
+  },
+  {
+   "id": 504,
+   "name": "机动工造",
+   "owner": "master"
+  },
+  {
+   "id": 505,
+   "name": "周期推演",
+   "owner": "master"
+  },
+  {
+   "id": 506,
+   "name": "身若惊鸿",
+   "owner": "master"
+  },
+  {
+   "id": 507,
+   "name": "先声夺人",
+   "owner": "master"
+  },
+  {
+   "id": 508,
+   "name": "明镜止水",
+   "owner": "master"
+  },
+  {
+   "id": 509,
+   "name": "破境还元",
+   "owner": "master"
+  },
+  {
+   "id": 510,
+   "name": "周天行",
+   "owner": "master"
+  },
+  {
+   "id": 511,
+   "name": "六合八荒",
+   "owner": "master"
+  },
+  {
+   "id": 512,
+   "name": "错骨缠龙",
+   "owner": "master"
+  },
+  {
+   "id": 513,
+   "name": "一指金刚",
+   "owner": "master"
+  },
+  {
+   "id": 514,
+   "name": "不二法门",
+   "owner": "master"
+  },
+  {
+   "id": 515,
+   "name": "迟到的正义",
+   "owner": "master"
+  },
+  {
+   "id": 516,
+   "name": "信念的枷锁",
+   "owner": "master"
+  },
+  {
+   "id": 517,
+   "name": "义务的终结",
+   "owner": "master"
+  },
+  {
+   "id": 518,
+   "name": "死亡与新生",
+   "owner": "master"
+  },
+  {
+   "id": 519,
+   "name": "内心的正义",
+   "owner": "master"
+  },
+  {
+   "id": 520,
+   "name": "放逐",
+   "owner": "master"
+  },
+  {
+   "id": 521,
+   "name": "适情录",
+   "owner": "master"
+  },
+  {
+   "id": 522,
+   "name": "双飞燕",
+   "owner": "master"
+  },
+  {
+   "id": 523,
+   "name": "双倒扑",
+   "owner": "master"
+  },
+  {
+   "id": 524,
+   "name": "接不归",
+   "owner": "master"
+  },
+  {
+   "id": 525,
+   "name": "相思断",
+   "owner": "master"
+  },
+  {
+   "id": 526,
+   "name": "回龙征",
+   "owner": "master"
+  },
+  {
+   "id": 527,
+   "name": "魔剑传承",
+   "owner": "master"
+  },
+  {
+   "id": 528,
+   "name": "一刀流",
+   "owner": "master"
+  },
+  {
+   "id": 529,
+   "name": "光芒一闪",
+   "owner": "master"
+  },
+  {
+   "id": 530,
+   "name": "二河白道",
+   "owner": "master"
+  },
+  {
+   "id": 531,
+   "name": "迁延之魔眼",
+   "owner": "master"
+  },
+  {
+   "id": 532,
+   "name": "歪曲之魔眼",
+   "owner": "master"
+  },
+  {
+   "id": 533,
+   "name": "往视之魔眼",
+   "owner": "master"
+  },
+  {
+   "id": 534,
+   "name": "预见之魔眼",
+   "owner": "master"
+  },
+  {
+   "id": 535,
+   "name": "泡影之魔眼",
+   "owner": "master"
+  },
+  {
+   "id": 536,
+   "name": "远视之魔眼",
+   "owner": "master"
+  },
+  {
+   "id": 537,
+   "name": "生命之魔眼",
+   "owner": "master"
+  },
+  {
+   "id": 538,
+   "name": "封印保存",
+   "owner": "master"
+  },
+  {
+   "id": 539,
+   "name": "贫民窟侦探",
+   "owner": "master"
+  },
+  {
+   "id": 540,
+   "name": "灵体加工魔术",
+   "owner": "master"
+  },
+  {
+   "id": 541,
+   "name": "努力的结晶",
+   "owner": "master"
+  },
+  {
+   "id": 542,
+   "name": "卢恩制作",
+   "owner": "master"
+  },
+  {
+   "id": 543,
+   "name": "二重召唤咒文",
+   "owner": "master"
+  },
+  {
+   "id": 544,
+   "name": "金钱的魅力",
+   "owner": "master"
+  },
+  {
+   "id": 545,
+   "name": "狂化咒文",
+   "owner": "master"
+  },
+  {
+   "id": 546,
+   "name": "兽化魔术",
+   "owner": "master"
+  },
+  {
+   "id": 547,
+   "name": "万华之杖",
+   "owner": "master"
+  },
+  {
+   "id": 548,
+   "name": "魔术师的优雅",
+   "owner": "master"
+  },
+  {
+   "id": 549,
+   "name": "魔术师杀手",
+   "owner": "master"
+  },
+  {
+   "id": 550,
+   "name": "龙告令咒",
+   "owner": "master"
+  },
+  {
+   "id": 551,
+   "name": "魔弹装填",
+   "owner": "master"
+  },
+  {
+   "id": 552,
+   "name": "流转之水(拉格斯)",
+   "owner": "master"
+  },
+  {
+   "id": 553,
+   "name": "活力之火(肯纳兹)",
+   "owner": "master"
+  },
+  {
+   "id": 554,
+   "name": "停滞之冰(伊莎)",
+   "owner": "master"
+  },
+  {
+   "id": 555,
+   "name": "共荣之生灵(美娜兹)",
+   "owner": "master"
+  },
+  {
+   "id": 556,
+   "name": "丰饶之天使(英格瓦兹)",
+   "owner": "master"
+  },
+  {
+   "id": 557,
+   "name": "觉醒之白昼(达格斯)",
+   "owner": "master"
+  },
+  {
+   "id": 558,
+   "name": "魔眼激发",
+   "owner": "master"
+  },
+  {
+   "id": 559,
+   "name": "意识扩张",
+   "owner": "master"
+  },
+  {
+   "id": 560,
+   "name": "弱点看破",
+   "owner": "master"
+  },
+  {
+   "id": 561,
+   "name": "镜中形影",
+   "owner": "master"
+  },
+  {
+   "id": 562,
+   "name": "继理血戒(全形态)",
+   "owner": "master"
+  },
+  {
+   "id": 563,
+   "name": "暴走冲动",
+   "owner": "master"
+  },
+  {
+   "id": 564,
+   "name": "渴血恶灵",
+   "owner": "master"
+  },
+  {
+   "id": 565,
+   "name": "触觉延伸",
+   "owner": "master"
+  },
+  {
+   "id": 566,
+   "name": "死亡初拥",
+   "owner": "master"
+  },
+  {
+   "id": 567,
+   "name": "退魔净眼",
+   "owner": "master"
+  },
+  {
+   "id": 568,
+   "name": "退魔冲动",
+   "owner": "master"
+  },
+  {
+   "id": 569,
+   "name": "此身双灵",
+   "owner": "master"
+  },
+  {
+   "id": 570,
+   "name": "七夜暗杀术",
+   "owner": "master"
+  },
+  {
+   "id": 571,
+   "name": "祟神使役(退魔)",
+   "owner": "master"
+  },
+  {
+   "id": 572,
+   "name": "净空感应",
+   "owner": "master"
+  },
+  {
+   "id": 573,
+   "name": "破知化物",
+   "owner": "master"
+  },
+  {
+   "id": 574,
+   "name": "禁缚术式",
+   "owner": "master"
+  },
+  {
+   "id": 575,
+   "name": "反转冲动",
+   "owner": "master"
+  },
+  {
+   "id": 576,
+   "name": "槛发",
+   "owner": "master"
+  },
+  {
+   "id": 577,
+   "name": "约束之神秘",
+   "owner": "master"
+  },
+  {
+   "id": 578,
+   "name": "流转之传承",
+   "owner": "master"
+  },
+  {
+   "id": 579,
+   "name": "鞘中之锋刃",
+   "owner": "master"
+  },
+  {
+   "id": 580,
+   "name": "鲜血之结末",
+   "owner": "master"
+  },
+  {
+   "id": 581,
+   "name": "因子之烙印",
+   "owner": "master"
+  },
+  {
+   "id": 582,
+   "name": "王之现世身",
+   "owner": "master"
+  },
+  {
+   "id": 583,
+   "name": "忏悔祷文",
+   "owner": "master"
+  },
+  {
+   "id": 584,
+   "name": "神祝仪式",
+   "owner": "master"
+  },
+  {
+   "id": 585,
+   "name": "坚定信仰",
+   "owner": "master"
+  },
+  {
+   "id": 586,
+   "name": "对灵作战",
+   "owner": "master"
+  },
+  {
+   "id": 587,
+   "name": "黑键精通",
+   "owner": "master"
+  },
+  {
+   "id": 588,
+   "name": "铁甲作用",
+   "owner": "master"
+  },
+  {
+   "id": 589,
+   "name": "灵慑喝止",
+   "owner": "master"
+  },
+  {
+   "id": 590,
+   "name": "驱魔禁制",
+   "owner": "master"
+  },
+  {
+   "id": 591,
+   "name": "以儆效尤",
+   "owner": "master"
+  },
+  {
+   "id": 592,
+   "name": "告死预言",
+   "owner": "master"
+  },
+  {
+   "id": 593,
+   "name": "第四福音",
+   "owner": "master"
+  },
+  {
+   "id": 594,
+   "name": "殉节历典",
+   "owner": "master"
+  },
+  {
+   "id": 595,
+   "name": "被虐灵媒",
+   "owner": "master"
+  },
+  {
+   "id": 596,
+   "name": "治疗灵媒",
+   "owner": "master"
+  },
+  {
+   "id": 597,
+   "name": "接续灵媒",
+   "owner": "master"
+  },
+  {
+   "id": 598,
+   "name": "律戒原典",
+   "owner": "master"
+  },
+  {
+   "id": 599,
+   "name": "天声启示",
+   "owner": "master"
+  },
+  {
+   "id": 600,
+   "name": "自我鞭策",
+   "owner": "master"
+  },
+  {
+   "id": 601,
+   "name": "圣母圣咏",
+   "owner": "master"
+  },
+  {
+   "id": 602,
+   "name": "正式外典",
+   "owner": "master"
+  },
+  {
+   "id": 603,
+   "name": "否决圣典",
+   "owner": "master"
+  },
+  {
+   "id": 604,
+   "name": "火葬式典",
+   "owner": "master"
+  },
+  {
+   "id": 605,
+   "name": "执法搭档",
+   "owner": "master"
+  },
+  {
+   "id": 606,
+   "name": "钓鱼执法",
+   "owner": "master"
+  },
+  {
+   "id": 607,
+   "name": "双枪绝技",
+   "owner": "master"
+  },
+  {
+   "id": 608,
+   "name": "卫星天眼",
+   "owner": "master"
+  },
+  {
+   "id": 609,
+   "name": "枪械精通",
+   "owner": "master"
+  },
+  {
+   "id": 610,
+   "name": "战斗动员",
+   "owner": "master"
+  },
+  {
+   "id": 611,
+   "name": "武装配给",
+   "owner": "master"
+  },
+  {
+   "id": 612,
+   "name": "后勤支援",
+   "owner": "master"
+  },
+  {
+   "id": 613,
+   "name": "区域封锁",
+   "owner": "master"
+  },
+  {
+   "id": 614,
+   "name": "迅速行军",
+   "owner": "master"
+  },
+  {
+   "id": 615,
+   "name": "资金调取",
+   "owner": "master"
+  },
+  {
+   "id": 616,
+   "name": "资金周转",
+   "owner": "master"
+  },
+  {
+   "id": 617,
+   "name": "炒股",
+   "owner": "master"
+  },
+  {
+   "id": 618,
+   "name": "雇佣兵小队",
+   "owner": "master"
+  },
+  {
+   "id": 619,
+   "name": "强力保安",
+   "owner": "master"
+  },
+  {
+   "id": 632,
+   "name": "投影魔术(从者)",
+   "owner": "servant"
+  },
+  {
+   "id": 635,
+   "name": "信任的伙伴",
+   "owner": "master"
+  },
+  {
+   "id": 636,
+   "name": "魔术的馈赠",
+   "owner": "master"
+  },
+  {
+   "id": 637,
+   "name": "洗礼咏唱",
+   "owner": "master"
+  },
+  {
+   "id": 638,
+   "name": "破却宣言",
+   "owner": "master"
+  },
+  {
+   "id": 639,
+   "name": "抵近射击",
+   "owner": "master"
+  },
+  {
+   "id": 640,
+   "name": "健硕",
+   "owner": "servant"
+  },
+  {
+   "id": 641,
+   "name": "弓矢制作",
+   "owner": "servant"
+  },
+  {
+   "id": 642,
+   "name": "变化",
+   "owner": "servant"
+  },
+  {
+   "id": 643,
+   "name": "恐慌之声",
+   "owner": "servant"
+  },
+  {
+   "id": 644,
+   "name": "自我改造",
+   "owner": "servant"
+  },
+  {
+   "id": 645,
+   "name": "太阳神的加护",
+   "owner": "servant"
+  },
+  {
+   "id": 646,
+   "name": "英雄的伴娘",
+   "owner": "both"
+  },
+  {
+   "id": 647,
+   "name": "箭矢-",
+   "owner": "both"
+  },
+  {
+   "id": 648,
+   "name": "投掷(短刀)",
+   "owner": "servant"
+  },
+  {
+   "id": 649,
+   "name": "陨铁之鞴(原初之火)",
+   "owner": "servant"
+  },
+  {
+   "id": 650,
+   "name": "巨兽猎手",
+   "owner": "servant"
+  },
+  {
+   "id": 651,
+   "name": "静谧的舞蹈",
+   "owner": "servant"
+  },
+  {
+   "id": 652,
+   "name": "元素精灵",
+   "owner": "servant"
+  },
+  {
+   "id": 653,
+   "name": "贤者之石",
+   "owner": "servant"
+  },
+  {
+   "id": 666,
+   "name": "龙种改造",
+   "owner": "servant"
+  },
+  {
+   "id": 667,
+   "name": "命运纺织",
+   "owner": "servant"
+  },
+  {
+   "id": 668,
+   "name": "复仇计划(狂奔)",
+   "owner": "servant"
+  },
+  {
+   "id": 669,
+   "name": "雏鸟礼装",
+   "owner": "servant"
+  },
+  {
+   "id": 670,
+   "name": "杀戮报偿",
+   "owner": "servant"
+  },
+  {
+   "id": 671,
+   "name": "睿智的结晶",
+   "owner": "servant"
+  },
+  {
+   "id": 672,
+   "name": "狂战士",
+   "owner": "servant"
+  },
+  {
+   "id": 673,
+   "name": "高贵少女之爱",
+   "owner": "servant"
+  },
+  {
+   "id": 674,
+   "name": "虚数美术",
+   "owner": "servant"
+  },
+  {
+   "id": 675,
+   "name": "支援咒术",
+   "owner": "servant"
+  },
+  {
+   "id": 676,
+   "name": "黄房子",
+   "owner": "servant"
+  },
+  {
+   "id": 688,
+   "name": "对魔力",
+   "owner": "servant"
+  },
+  {
+   "id": 689,
+   "name": "骑乘",
+   "owner": "servant"
+  },
+  {
+   "id": 690,
+   "name": "直感",
+   "owner": "servant"
+  },
+  {
+   "id": 691,
+   "name": "心眼(伪)",
+   "owner": "servant"
+  },
+  {
+   "id": 692,
+   "name": "战斗续行",
+   "owner": "servant"
+  },
+  {
+   "id": 693,
+   "name": "领袖气质",
+   "owner": "servant"
+  },
+  {
+   "id": 694,
+   "name": "魔力放出",
+   "owner": "servant"
+  },
+  {
+   "id": 699,
+   "name": "宝石魔术",
+   "owner": "master"
+  },
+  {
+   "id": 700,
+   "name": "超越回路",
+   "owner": "master"
+  },
+  {
+   "id": 701,
+   "name": "调律魔术",
+   "owner": "master"
+  },
+  {
+   "id": 705,
+   "name": "单独行动",
+   "owner": "servant"
+  },
+  {
+   "id": 706,
+   "name": "阵地制作",
+   "owner": "servant"
+  },
+  {
+   "id": 707,
+   "name": "道具制作",
+   "owner": "servant"
+  },
+  {
+   "id": 708,
+   "name": "心眼(真)",
+   "owner": "servant"
+  },
+  {
+   "id": 709,
+   "name": "千里眼",
+   "owner": "servant"
+  },
+  {
+   "id": 710,
+   "name": "黄金律",
+   "owner": "servant"
+  },
+  {
+   "id": 711,
+   "name": "无穷的武练",
+   "owner": "servant"
+  },
+  {
+   "id": 721,
+   "name": "兽化",
+   "owner": "servant"
+  },
+  {
+   "id": 722,
+   "name": "缩地",
+   "owner": "servant"
+  },
+  {
+   "id": 723,
+   "name": "中国武术",
+   "owner": "servant"
+  },
+  {
+   "id": 724,
+   "name": "混血",
+   "owner": "servant"
+  },
+  {
+   "id": 725,
+   "name": "机关制作",
+   "owner": "servant"
+  },
+  {
+   "id": 726,
+   "name": "鬼神之显",
+   "owner": "servant"
+  },
+  {
+   "id": 727,
+   "name": "投射魔术",
+   "owner": "master"
+  },
+  {
+   "id": 728,
+   "name": "机巧军势",
+   "owner": "master"
+  },
+  {
+   "id": 729,
+   "name": "七重守护",
+   "owner": "master"
+  },
+  {
+   "id": 730,
+   "name": "神经衰弱",
+   "owner": "master"
+  },
+  {
+   "id": 731,
+   "name": "强筋锻骨",
+   "owner": "master"
+  },
+  {
+   "id": 732,
+   "name": "毒蛇一艺",
+   "owner": "master"
+  },
+  {
+   "id": 733,
+   "name": "无限切",
+   "owner": "both"
+  },
+  {
+   "id": 734,
+   "name": "原初的卢恩",
+   "owner": "both"
+  },
+  {
+   "id": 735,
+   "name": "投射魔术",
+   "owner": "master"
+  },
+  {
+   "id": 736,
+   "name": "继理血戒",
+   "owner": "master"
+  },
+  {
+   "id": 737,
+   "name": "祝福秘迹",
+   "owner": "master"
+  },
+  {
+   "id": 738,
+   "name": "资料调取",
+   "owner": "master"
+  },
+  {
+   "id": 739,
+   "name": "火力支援",
+   "owner": "both"
+  },
+  {
+   "id": 740,
+   "name": "金钱的力量",
+   "owner": "master"
+  }
+ ]
+}
