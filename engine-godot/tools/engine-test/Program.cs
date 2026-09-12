@@ -1458,6 +1458,20 @@ public static class Program
                 $"较强一方胜率更高 (左{seaBattle.LeftWin}% > 右{seaBattle.RightWin}%)");
             Check(seaBattle.SeaRows.Count > 0, $"工序表格行生成 {seaBattle.SeaRows.Count} 行");
             Check(seaBattle.SeaLeftBattleValue == 240, $"战斗属性总值 左方 3×80 = 240 (现{seaBattle.SeaLeftBattleValue})");
+
+            // 工序表格样例(游戏内「大航海战斗表」页面按同样行序渲染)
+            Console.WriteLine("  --- 工序表格样例(蓝方 vs 橙方) ---");
+            int cols = seaA.S.FloorRate == seaB.S.FloorRate ? 3 : 3;
+            foreach (SeaSettle.Row row in SeaSettle.Report2(seaA, seaB, seaPicks))
+            {
+                if (row.Cells.Length != cols)
+                {
+                    Check(false, $"工序表格列数一致({row.Phase}/{row.Label} 现{row.Cells.Length})");
+                    break;
+                }
+                string pad = row.Label.Length >= 12 ? "" : new string(' ', 12 - System.Text.Encoding.UTF8.GetByteCount(row.Label) / 3);
+                Console.WriteLine($"    {row.Phase} {row.Label}{pad} | " + string.Join(" | ", row.Cells));
+            }
         }
 
         Console.WriteLine($"\n=== 结果: {_pass} 通过, {_fail} 失败 ===");
