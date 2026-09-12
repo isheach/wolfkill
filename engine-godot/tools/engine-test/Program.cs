@@ -1371,6 +1371,95 @@ public static class Program
         Console.WriteLine("=== 全量资源运行冒烟 ===");
         SmokeAllResources();
 
+        // ================= 大航海战斗表结算(移植校验) =================
+        Console.WriteLine();
+        Console.WriteLine("=== 大航海战斗表结算 ===");
+        {
+            // 表内实例: 蓝方(醉枭赌徒 主力 + 焰狼/哈基米嗷 辅助) vs 橙方(机甲少女)
+            var seaBlue = new SeaSettle.Side { Name = "蓝方" };
+            seaBlue.Members.Add(new SeaSettle.Member { Unit = MakeServant("醉枭赌徒", 70, 3, 105, 175, 40, 35, 80), Slot = 0, PreWin = 20 });
+            seaBlue.Members.Add(new SeaSettle.Member { Unit = MakeServant("焰狼", 70, 3, 10, 25, 40, 20, 45), Slot = 1 });
+            seaBlue.Members.Add(new SeaSettle.Member { Unit = MakeServant("哈基米嗷", 40, 3, 70, 65, 70, 0, 50), Slot = 2 });
+            var seaOrange = new SeaSettle.Side { Name = "橙方" };
+            seaOrange.Members.Add(new SeaSettle.Member { Unit = MakeServant("机甲少女", 45, 3, 70, 70, 70, 80, 40), Slot = 0 });
+            var seaPicks = new SeaSettle.Picks(2) { Attr = new[] { 2, 0, 1 } };   // 敏捷/筋力/耐久
+            var (seaA, seaB) = SeaSettle.Settle2(seaBlue, seaOrange, seaPicks);
+
+            Check(Math.Abs(seaA.Total[2] - 95) < 1e-6, $"属性总值 敏捷 40+辅助÷2 = 95 (现{seaA.Total[2]:0.#})");
+            Check(Math.Abs(seaA.Total[0] - 145) < 1e-6, $"属性总值 筋力 105+辅助÷2 = 145 (现{seaA.Total[0]:0.#})");
+            Check(Math.Abs(seaA.Total[1] - 220) < 1e-6, $"属性总值 耐久 175+辅助÷2 = 220 (现{seaA.Total[1]:0.#})");
+            Check(Math.Abs(seaA.BattleValue - 460) < 1e-6, $"战斗属性总值 左方 460 (现{seaA.BattleValue:0.#})");
+            Check(Math.Abs(seaB.BattleValue - 210) < 1e-6, $"战斗属性总值 右方 210 (现{seaB.BattleValue:0.#})");
+            Check(seaA.BaseRate == 90 && seaB.BaseRate == 10, $"基础胜率 三优=90 : 三劣=10 (现{seaA.BaseRate}:{seaB.BaseRate})");
+            Check(Math.Abs(seaA.Chain - 640) < 1e-6, $"胜率合计 70等级+90基础+460战力+20战前 = 640 (现{seaA.Chain:0.#})");
+            Check(Math.Abs(seaB.Chain - 265) < 1e-6, $"胜率合计 45等级+10基础+210战力 = 265 (现{seaB.Chain:0.#})");
+            Check(Math.Abs(seaA.Diff - 375) < 1e-6, $"胜率差值 375 (现{seaA.Diff:0.#})");
+            Check(seaA.FinalRate == 100 && seaB.FinalRate == 0, $"最终胜率 clamp(50+375÷2) = 100 : 0 (现{seaA.FinalRate}:{seaB.FinalRate})");
+            Check(seaA.FinalRate + seaB.FinalRate == 100, "双方最终胜率互补");
+
+            Check(SeaSettle.BaseRateByVerdicts(new[] { 3, 3, 2 }, 3) == 80, "优劣组合 2优1平 = 80");
+            Check(SeaSettle.BaseRateByVerdicts(new[] { 3, 1, 1 }, 3) == 30, "优劣组合 1优2劣 = 30");
+            Check(SeaSettle.BaseRateByVerdicts(new[] { 2, 2, 2 }, 3) == 50, "优劣组合 3平 = 50");
+            Check(SeaSettle.BaseRateByVerdicts(new[] { 2, 2, 1 }, 3) == 40, "优劣组合 2平1劣 = 40");
+            Check(SeaSettle.BaseRateByVerdicts(new[] { 1, 1, 1 }, 3) == 10, "优劣组合 3劣 = 10");
+
+            // 魔力不足扣减: 每 -20 → -10; 单独行动减半; 宝具不吃扣减
+            var dry = MakeServant("缺魔者", 50, 3, 40, 40, 40, 40, 40);
+            dry.Attr[5] = 40;
+            dry.MpCur = -50;
+            var drySide = new SeaSettle.Side { Name = "缺魔" };
+            drySide.Members.Add(new SeaSettle.Member { Unit = dry, Slot = 0 });
+            SeaSettle.Prepare(drySide);
+            Check(drySide.Members[0].Deficit == -20, $"魔力-50 → 属性扣减 -20 (现{drySide.Members[0].Deficit})");
+            Check(drySide.Members[0].Attr[0] == 20, $"筋力 40-20 = 20 (现{drySide.Members[0].Attr[0]})");
+            Check(drySide.Members[0].Attr[5] == 40, $"宝具不吃魔力不足扣减 (现{drySide.Members[0].Attr[5]})");
+            drySide.SoloAction = true;
+            SeaSettle.Prepare(drySide);
+            Check(drySide.Members[0].Deficit == -10, $"单独行动扣减减半 = -10 (现{drySide.Members[0].Deficit})");
+
+            // 保底: 属性不低于 0
+            var floorU = MakeServant("保底者", 50, 3, 5, 5, 5, 5, 5);
+            floorU.MpCur = -400;
+            var floorSide = new SeaSettle.Side { Name = "保底" };
+            floorSide.Members.Add(new SeaSettle.Member { Unit = floorU, Slot = 0 });
+            SeaSettle.Prepare(floorSide);
+            Check(floorSide.Members[0].Attr[0] == 0, $"角色保底: 属性不低于0 (现{floorSide.Members[0].Attr[0]})");
+
+            // 三方混战: 四维优劣(30/15/10+10) 与 150 分制保有胜率
+            var tA = new SeaSettle.Side { Name = "甲" };
+            var tB = new SeaSettle.Side { Name = "乙" };
+            var tC = new SeaSettle.Side { Name = "丙" };
+            tA.Members.Add(new SeaSettle.Member { Unit = MakeServant("甲主", 60, 3, 100, 100, 100, 100, 100), Slot = 0 });
+            tB.Members.Add(new SeaSettle.Member { Unit = MakeServant("乙主", 50, 3, 60, 60, 60, 60, 60), Slot = 0 });
+            tC.Members.Add(new SeaSettle.Member { Unit = MakeServant("丙主", 40, 3, 60, 60, 60, 60, 60), Slot = 0 });
+            var picks3 = new SeaSettle.Picks(3) { Attr = new[] { 0, 1, 2, 3 } };
+            var rs3 = SeaSettle.Settle3(new[] { tA, tB, tC }, picks3);
+            Check(rs3[0].QuadScore == 130, $"四维优劣 全优 = 4×30+10 = 130 (现{rs3[0].QuadScore})");
+            Check(rs3[1].QuadScore == 10, $"四维优劣 二劣 = 0+10 = 10 (现{rs3[1].QuadScore})");
+            Check(Math.Abs(rs3[0].LevelTerm - 10) < 1e-6, $"等差 = 60-50 = 10 (现{rs3[0].LevelTerm:0.#})");
+            Check(Math.Abs(rs3[0].KeepRate - 150) < 1e-6, $"保有胜率 另两方低于基准 → 150 (现{rs3[0].KeepRate:0.#})");
+            Check(rs3[0].FinalRate == 100, $"三方最终胜率归一 100% (现{rs3[0].FinalRate}%)");
+            tA.StarPioneer = true;
+            var rs3b = SeaSettle.Settle3(new[] { tA, tB, tC }, picks3);
+            Check(Math.Abs(rs3b[0].LevelTerm) < 1e-6, "星之开拓者: 等差项归零");
+
+            // 战斗内接入: SeaMode 开关走大航海结算链
+            var seaWorld = new KsgWorld();
+            var seaL = MakeServant("左主", 60, 1, 80, 80, 80, 60, 60);
+            var seaR = MakeServant("右主", 50, 1, 50, 50, 50, 50, 50);
+            if (seaL.Id <= 0) seaWorld.RegisterUnit(seaL);
+            if (seaR.Id <= 0) seaWorld.RegisterUnit(seaR);
+            var seaBattle = new KsgBattle { SeaMode = true, SeaPickAttr = new[] { 0, 1, 2 } };
+            seaBattle.StartParty(seaWorld, new List<UnitDef> { seaL }, new List<UnitDef> { seaR }, 2);
+            seaBattle.BatteryCheck();
+            Check(seaBattle.LeftWin + seaBattle.RightWin == 100,
+                $"战斗中大航海结算: 胜率互补 (左{seaBattle.LeftWin}% + 右{seaBattle.RightWin}%)");
+            Check(seaBattle.LeftWin > seaBattle.RightWin,
+                $"较强一方胜率更高 (左{seaBattle.LeftWin}% > 右{seaBattle.RightWin}%)");
+            Check(seaBattle.SeaRows.Count > 0, $"工序表格行生成 {seaBattle.SeaRows.Count} 行");
+            Check(seaBattle.SeaLeftBattleValue == 240, $"战斗属性总值 左方 3×80 = 240 (现{seaBattle.SeaLeftBattleValue})");
+        }
+
         Console.WriteLine($"\n=== 结果: {_pass} 通过, {_fail} 失败 ===");
         if (_fail > 0) Environment.Exit(1);
     }

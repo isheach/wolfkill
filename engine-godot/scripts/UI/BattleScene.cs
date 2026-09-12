@@ -539,6 +539,16 @@ public partial class BattleScene : Control
                     AppendLog("请先选择主要属性");
                     return;
                 }
+                if (_battle.SeaMode)
+                {
+                    // 大航海结算的对抗属性: 左方主要属性 / 右方主要属性 / 随机属性
+                    _battle.SeaPickAttr = new[]
+                    {
+                        Math.Clamp(_battle.MainAttr[1], 0, 5),
+                        Math.Clamp(_battle.MainAttr[2], 0, 5),
+                        Math.Clamp(_battle.RandAttr, 0, 5),
+                    };
+                }
                 _battle.BatteryCheck();
                 // 进入主要工序: 蓄力-1等机制结算
                 Engine.KsgEffects.TickCharges(_battle, _world);
@@ -579,6 +589,20 @@ public partial class BattleScene : Control
             AddCastSection("左方", 1);
             AddCastSection("右方", 2);
             AddOrderButtons();
+            // 大航海战斗表结算开关(表内公式: 属性总值=主力+辅助÷2, 基础胜率取优劣组合, 最终胜率=clamp(50+差值/2))
+            var seaChk = new CheckBox
+            {
+                Text = "大航海战斗表结算(优劣组合表)",
+                ButtonPressed = _battle.SeaMode,
+                TooltipText = "启用后按《大航海战斗表》结算: 魔力不足每-20扣10属性(单独行动减半)、"
+                              + "属性总值=主力+辅助÷2、基础胜率取优劣组合表、最终胜率=clamp(50+胜率差值÷2)",
+            };
+            seaChk.Toggled += on =>
+            {
+                _battle.SeaMode = on;
+                AppendLog(on ? "▸ 已启用《大航海战斗表》结算" : "▸ 已切回原结算(战斗属性差值)");
+            };
+            _actionBox.AddChild(seaChk);
         }
         _nextBtn.Text = "确定并进入主要工序 →";
         _nextBtn.Disabled = true;

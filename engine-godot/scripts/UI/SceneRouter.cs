@@ -29,6 +29,13 @@ public static class SceneRouter
         Switch(from, s);
     }
 
+    /// <summary>大航海战斗表(结算流程展示 / GM 计算器)。</summary>
+    public static void GoSeaTable(Node from)
+    {
+        var s = new SeaTableScene();
+        Switch(from, s);
+    }
+
     public static void GoBattle(Node from, Model.UnitDef left, Model.UnitDef right, int width = 4)
     {
         var s = new BattleScene(left, right, width);

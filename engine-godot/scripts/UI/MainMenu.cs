@@ -60,6 +60,7 @@ public partial class MainMenu : Control
         AddButton(box, "圣杯战争(世界 · 单人全控)", () => SceneRouter.GoWorld(this), 56);
         AddButton(box, "联机大厅(主机 / 分机)", () => SceneRouter.GoLobby(this), 56);
         AddButton(box, "对战(双卡结算)", () => SceneRouter.GoBattleSelect(this));
+        AddButton(box, "大航海战斗表(结算流程)", () => SceneRouter.GoSeaTable(this));
         AddButton(box, "词典查询(状态 / 特效)", () => SceneRouter.GoDictionary(this));
         AddButton(box, "退出", () => GetTree().Quit(), 44);
     }

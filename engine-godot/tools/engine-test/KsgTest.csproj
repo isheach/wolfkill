@@ -12,6 +12,7 @@
     <Compile Include="..\..\scripts\Engine\WorldAdvanced.cs" Link="Engine\WorldAdvanced.cs" />
     <Compile Include="..\..\scripts\Engine\Dice.cs" Link="Engine\Dice.cs" />
     <Compile Include="..\..\scripts\Engine\KsgBattle.cs" Link="Engine\KsgBattle.cs" />
+    <Compile Include="..\..\scripts\Engine\SeaSettle.cs" Link="Engine\SeaSettle.cs" />
     <Compile Include="..\..\scripts\Engine\KsgEffects.cs" Link="Engine\KsgEffects.cs" />
     <Compile Include="..\..\scripts\Building\CardBuildRules.cs" Link="Building\CardBuildRules.cs" />
     <Compile Include="..\..\scripts\Save\SaveCodec.cs" Link="Save\SaveCodec.cs" />

@@ -297,6 +297,7 @@ public class KsgBattle
 
     public void BatteryCheck()
     {
+        if (SeaMode) { SeaBatteryCheck(); return; }
         int lv = 0, rv = 0;
         lv = SideAttrTotal(1);
         rv = SideAttrTotal(2);
@@ -332,6 +333,92 @@ public class KsgBattle
         if (side == 1) LeftWin += n;
         else RightWin += n;
         Log($"[胜率修正] {SideName(side)} {n:+0;-0}%(现 {LeftWin}% vs {RightWin}%)");
+    }
+
+    // ---------- 大航海战斗表结算(可切换) ----------
+
+    /// <summary>启用《大航海战斗表》结算链: 优劣组合表基础胜率 + clamp(50+差值/2) 最终胜率。</summary>
+    public bool SeaMode;
+    /// <summary>对抗属性(表内 属性A/B/C; 默认 筋力/耐久/敏捷)。</summary>
+    public int[] SeaPickAttr = { 0, 1, 2 };
+    /// <summary>手动优劣调整(每点 = ±10 战力, 逐属性)。</summary>
+    public int[] SeaBias = new int[3];
+    /// <summary>辅助胜率正常(true=战前补正全额求和; false=辅助减半)。</summary>
+    public bool SeaAuxRateNormal = true;
+    public int SeaLeftBattleValue, SeaRightBattleValue;
+    public int SeaLeftHalf, SeaRightHalf;
+    public double SeaLeftDiff;
+    public System.Collections.Generic.List<SeaSettle.Row> SeaRows = new();
+
+    /// <summary>大航海式结算: ①魔力/扣减/保底 ②属性总值(主力+辅助÷2)/战斗属性 ③优劣→基础胜率→最终胜率。</summary>
+    public void SeaBatteryCheck()
+    {
+        SeaSettle.Side a = BuildSeaSide(Left, "左方");
+        SeaSettle.Side b = BuildSeaSide(Right, "右方");
+        a.AuxRateNormal = SeaAuxRateNormal;
+        b.AuxRateNormal = SeaAuxRateNormal;
+        // 战斗内已累积的胜率修正(战术克制/指令/技能)折算进主力「战前胜率」栏; 底限与最终修正在 Effective() 中照常生效
+        if (a.Main != null) a.Main.PreWin = LeftWin;
+        if (b.Main != null) b.Main.PreWin = RightWin;
+        a.FloorRate = LeftFloor;
+        b.FloorRate = RightFloor;
+
+        var cfg = new SeaSettle.Picks(2) { Attr = SeaPickAttr };
+        for (int i = 0; i < SeaPickAttr.Length && i < 3; i++)
+        {
+            cfg.Bias[0][i] = SeaBias[i];
+            cfg.Bias[1][i] = SeaBias[i];
+        }
+        (SeaSettle.SideResult ra, SeaSettle.SideResult rb) = SeaSettle.Settle2(a, b, cfg);
+        SeaRows = SeaSettle.Report2(ra, rb, cfg);
+        SeaLeftBattleValue = (int)Math.Round(ra.BattleValue);
+        SeaRightBattleValue = (int)Math.Round(rb.BattleValue);
+        SeaLeftHalf = ra.HalfRate;
+        SeaRightHalf = rb.HalfRate;
+        SeaLeftDiff = ra.Diff;
+        LeftWin = ra.FinalRate;
+        RightWin = rb.FinalRate;
+
+        Log($"[大航海] 属性总值 左[{SeaAttrTotalText(ra)}] 右[{SeaAttrTotalText(rb)}]");
+        Log($"[大航海] 战斗属性 {SeaAttrPickText(cfg, ra)} = 左{SeaLeftBattleValue} / 右{SeaRightBattleValue}");
+        Log($"[大航海] 基础胜率(优劣组合) 左{ra.BaseRate}% : 右{rb.BaseRate}%");
+        Log($"[大航海] 胜率合计 左{ra.Chain:0.#} : 右{rb.Chain:0.#} → 差值 {ra.Diff:0.#}");
+        Log($"[大航海] 最终胜率 左{ra.FinalRate}% : 右{rb.FinalRate}% (差值减半版 左{ra.HalfRate}% : 右{rb.HalfRate}%)");
+    }
+
+    private static string SeaAttrTotalText(SeaSettle.SideResult r)
+    {
+        var parts = new System.Collections.Generic.List<string>();
+        for (int i = 0; i < SeaSettle.AttrCount; i++)
+            parts.Add($"{SeaSettle.AttrName(i)}{r.Total[i]:0.#}");
+        return string.Join(" ", parts);
+    }
+
+    private static string SeaAttrPickText(SeaSettle.Picks cfg, SeaSettle.SideResult r)
+    {
+        var parts = new System.Collections.Generic.List<string>();
+        for (int p = 0; p < cfg.Count && p < 4; p++)
+        {
+            string verdict = r.Verdict[p] switch { 3 => "优", 2 => "平", _ => "劣" };
+            parts.Add($"{SeaSettle.AttrName(cfg.Attr[p])}{r.PickValue[p]:0.#}({verdict})");
+        }
+        return string.Join(" ", parts);
+    }
+
+    /// <summary>战斗位 → 结算参战位: 主力位=主力; 辅助/仆役位=辅助(减半); 支援位不贡献属性(规则书 3.2)。</summary>
+    private static SeaSettle.Side BuildSeaSide(System.Collections.Generic.List<BattleUnit> list, string name)
+    {
+        var side = new SeaSettle.Side { Name = name };
+        foreach (BattleUnit bu in list)
+        {
+            if (bu.Slot == 4) continue;
+            side.Members.Add(new SeaSettle.Member
+            {
+                Unit = bu.Unit,
+                Slot = bu.Slot == 1 ? 0 : side.Members.Count,
+            });
+        }
+        return side;
     }
 
     public void AddFinalWin(int side, int n)
